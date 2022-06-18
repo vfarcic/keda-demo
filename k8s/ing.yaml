@@ -8,7 +8,7 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
-  # ingressClassName: nginx
+  ingressClassName: traefik
   rules:
     - http:
         paths:
@@ -19,4 +19,4 @@ spec:
                 name: devops-toolkit
                 port:
                   number: 80
-      host: dot.127.0.0.1.nip.io
+      host: dot.34.139.11.114.nip.io

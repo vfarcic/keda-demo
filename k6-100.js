@@ -2,11 +2,11 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export const options = {
-  vus: 100,
+  vus: 200,
   duration: '30s',
 };
 
 export default function () {
-  http.get('http://dot.127.0.0.1.nip.io');
+  http.get('http://dot.34.139.11.114.nip.io');
   sleep(1);
 }
